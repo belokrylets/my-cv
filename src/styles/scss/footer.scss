@@ -1,0 +1,37 @@
+.footer {
+    height: 73px;
+
+    font-size: 14px;
+    background: rgba(26, 26, 26, 0.84);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    .social {
+        img {
+            margin-left: 10px;
+            width: 35px;
+        }
+    }
+
+    .block-Right {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+i {
+    color: #f4fa1a;
+    margin-left: 15px;
+    transition-duration: 0.5s;
+
+    &:hover {
+        color: rgb(181, 184, 157);
+    }
+}

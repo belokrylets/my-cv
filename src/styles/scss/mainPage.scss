@@ -1,0 +1,24 @@
+.image-main-page {
+    text-align: center;
+
+    img {
+        width: 70%;
+    }
+}
+
+.text-main-page {
+    .greetings {
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .name {
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .profession {
+        font-size: 18px;
+        line-height: 47px;
+    }
+}

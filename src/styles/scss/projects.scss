@@ -1,0 +1,179 @@
+%card-item-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #636060;
+}
+
+%card-item-active-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: details 0.5s linear forwards;
+    position: absolute;
+}
+
+@keyframes details {
+    0% {}
+
+    100% {
+        position: absolute;
+
+        height: 450px;
+    }
+}
+
+.cards-projects {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+
+.project-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-item-down,
+.card-item-up {
+    @extend %card-item-template
+}
+
+.card-small {
+    height: 170px;
+    width: 200px;
+}
+
+.card-big {
+    height: 270px;
+    width: 200px;
+}
+
+.card-average {
+    height: 220px;
+    width: 200px;
+}
+
+.card-item-up {
+    &.active {
+        @extend %card-item-active-template;
+        top: 0;
+        left: 0;
+    }
+}
+
+.card-item-down {
+    &.active {
+        @extend %card-item-active-template;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.project-column {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.buttonProject {
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #f4fa1a;
+    border-radius: 15px;
+    background: #1a1a1a;
+
+    transition-duration: 1s;
+
+
+    &:hover {
+        background: #f2f594;
+        color: #1a1a1a;
+    }
+
+    &:active {
+        background: #f4fa1a;
+        color: #1a1a1a;
+    }
+
+}
+
+.details {
+    overflow: hidden;
+    height: 100%;
+
+    h4 {
+        font-size: 18px;
+        margin: 0;
+        color: #f4fa1a;
+    }
+
+    .description {
+        padding: 10px;
+    }
+
+    .stack {
+        margin-top: 10px;
+
+        ul {
+            padding-left: 20px;
+            margin: 7px 0;
+        }
+
+
+    }
+
+    .source {
+        font-size: 16px;
+
+        a {
+            text-decoration: none;
+            color: #f4fa1a
+        }
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+    .cards-projects {
+        justify-content: center;
+    }
+
+
+    .card-small,
+    .card-big,
+    .card-average {
+        height: 200px;
+        width: 300px;
+    }
+
+    .card-item-up,
+    .card-item-down {
+        align-items: center;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: details-mobile 0.5s linear forwards;
+            position: relative;
+        }
+    }
+
+    @keyframes details-mobile {
+        0% {}
+
+        100% {
+            height: 430px;
+        }
+    }
+}

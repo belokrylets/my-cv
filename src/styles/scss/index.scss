@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+
+@import 'nullStyles.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'mainPage.scss';
+@import 'aboutMe.scss';
+@import 'skills.scss';
+@import 'contacts.scss';
+@import 'projects.scss';
+@import 'errorPage.scss';
+
+%page-template {
+  display: flex;
+
+  height: 100%;
+  margin: 20px 0;
+}
+
+%content-template {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto";
+  color: #ffffff;
+  font-size: 16px;
+
+
+  background: #1a1a1a;
+  background-image: url(../../images/backgroung.svg);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+}
+
+main {
+  padding-top: 70px;
+}
+
+.container {
+  max-width: 1106px;
+  padding: 0 15px;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1 1 auto;
+  padding-top: 100px;
+}
+
+.gold-color {
+  color: #f4fa1a;
+}
+
+.my-button {
+  box-sizing: border-box;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  border: 2px solid #f4fa1a;
+  border-radius: 15px;
+  background: #1a1a1a;
+
+  transition-duration: 1s;
+
+  &:hover {
+    background: #f2f594;
+    color: #1a1a1a;
+  }
+
+  &:active {
+    background: #f4fa1a;
+    color: #1a1a1a;
+  }
+
+  &:disabled {
+    background: #8c8d73;
+    color: #1a1a1a;
+  }
+}
+
+.main-page,
+.about,
+.skills,
+.contacts,
+.projects,
+.error-page {
+  @extend %page-template;
+}
+
+.main-page-content,
+.about-content,
+.skills-content {
+  @extend %content-template;
+}
+
+@media (max-width: 767px) {
+
+  .main-page-content,
+  .about-content,
+  .skills-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}

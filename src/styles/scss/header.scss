@@ -1,0 +1,134 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1a1a1a;
+        z-index: 2;
+    }
+}
+
+.header-body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header-logo {
+    position: relative;
+    display: flex;
+    z-index: 3;
+}
+
+.menu-list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+
+    .menu-item {
+        width: 102px;
+
+        .nav-link {
+            text-decoration: none;
+            color: inherit;
+            font-family: "Roboto";
+            font-style: normal;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            &:hover {
+                color: #f2f594;
+            }
+
+            &.active {
+                color: #f4fa1a;
+            }
+        }
+    }
+}
+
+.burger-btn {
+    display: none;
+    background-color: #1a1a1a;
+    border: none;
+    color: #f4fa1a;
+    font-size: 40px;
+    transition-duration: 2s;
+
+    &:hover {
+        color: #f2f594;
+    }
+
+    .burger-button {
+        margin: 0;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .header-body {
+        height: 50px;
+    }
+
+    .blur {
+        transition-duration: 1s;
+
+        &.active {
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(2px);
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    .header-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #636060;
+        padding: 70px 0 0 0;
+        transition-duration: 1s;
+        transform: translateX(-100%);
+
+        &.active {
+            transform: translateX(0);
+            top: 0;
+        }
+    }
+
+    .menu-list {
+        display: block;
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 20px;
+        }
+    }
+
+    .burger-btn {
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+
+}

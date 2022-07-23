@@ -1,0 +1,16 @@
+.error-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    font-size: 150px;
+    font-family: 'Revala';
+    color: #f4fa1a;
+}
+
+.error-text {
+    font-size: 30px;
+    text-align: center;
+}

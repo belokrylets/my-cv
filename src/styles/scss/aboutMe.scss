@@ -1,0 +1,70 @@
+@keyframes photo {
+    0% {}
+
+    100% {
+        top: -20px;
+        right: -20px;
+    }
+}
+
+@keyframes photoMobile {
+    0% {}
+
+    100% {
+        top: -20px;
+        left: 20px;
+    }
+}
+
+.image-about {
+    position: relative;
+    width: 350px;
+    height: 350px;
+
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 350px;
+        border-radius: 20px;
+        z-index: 20;
+        animation: photo 2s forwards;
+    }
+
+    .frame {
+        position: absolute;
+
+        z-index: 10;
+        width: 350px;
+        height: 350px;
+        box-sizing: border-box;
+        border: 3px solid #f4fa1a;
+        border-radius: 20px;
+    }
+
+}
+
+.text-about {
+    width: 50%;
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text-about {
+        width: 100%;
+    }
+
+    .image-about {
+        img {
+            left: -10px;
+            animation: photoMobile 2s forwards;
+        }
+
+        .frame {
+            left: -10px;
+        }
+    }
+}
