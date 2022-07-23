@@ -108,11 +108,13 @@
         background-color: #636060;
         padding: 70px 0 0 0;
         transition-duration: 1s;
-        transform: translateX(-100%);
+        transform: translateX(200%);
+
 
         &.active {
-            transform: translateX(0);
+            transform: translateX(100%);
             top: 0;
+            box-shadow: -2px 0 .4em #636060;
         }
     }
 

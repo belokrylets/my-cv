@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navMenu } from "../../data/navMenu";
-import logotip from "../../images/logotip.svg";
+import logo from "../../images/logo.svg";
 import ButtonBurger from "./ButtonBurger";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className={classNames("blur", { active: burgerActive })}></div>
         <div className="header-body" onClick={(e) => e.stopPropagation()}>
           <div className="header-logo">
-            <img src={logotip} alt="" />
+            <img src={logo} alt="" />
           </div>
           <nav className={classNames("header-menu", { active: burgerActive })}>
             <ul className="menu-list">

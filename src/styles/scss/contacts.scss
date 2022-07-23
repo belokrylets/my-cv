@@ -59,15 +59,16 @@ form {
     align-items: center;
     margin-top: 10px;
 
-    img {
-        width: 30px;
-        height: 30px;
-
+    i {
         margin-right: 10px;
     }
 
     a {
         color: inherit;
+
+        &:hover {
+            color: #f4fa1a
+        }
     }
 }
 
