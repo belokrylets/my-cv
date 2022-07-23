@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ProjectCardList from "./UI/ProjectCardList";
 
 const Projects = () => {

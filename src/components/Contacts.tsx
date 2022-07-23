@@ -1,11 +1,5 @@
 import React from "react";
 import SmallInput from "./UI/SmallInput";
-import account from "../images/Account.svg";
-import address from "../images/Address.svg";
-import mail from "../images/mail.svg";
-import github from "../images/github.svg";
-import resume from "../images/resume.svg";
-import phone from "../images/phone.svg";
 import MessageInput from "./UI/MessageInput";
 import BigInput from "./UI/BigInput";
 import { Icon } from "@iconify/react";
