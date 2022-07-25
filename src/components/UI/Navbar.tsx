@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { navMenu } from "../../data/navMenu";
@@ -37,6 +37,7 @@ const Navbar = () => {
               {navMenu.map(({ title, id, link }) => (
                 <li className="menu-item " key={id}>
                   <Link
+                    data-testid={id}
                     onClick={() => handleItemMenu(id)}
                     className={classNames("nav-link", {
                       active: id === activePage,
