@@ -5,7 +5,7 @@ const ErrorPage = () => {
     <div className="error-page">
       <div className="error-page-content container">
         <div className="error">404</div>
-        <div className="error-text">Такой страницы не сущесествует</div>
+        <div className="error-text">Такой страницы не существует</div>
       </div>
     </div>
   );

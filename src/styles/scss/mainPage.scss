@@ -2,23 +2,30 @@
     text-align: center;
 
     img {
-        width: 70%;
+        width: 90%;
     }
 }
 
 .text-main-page {
     .greetings {
-        font-size: 14px;
+        font-size: 25px;
+        padding-bottom: 15px;
         line-height: 32px;
+
     }
 
     .name {
         font-weight: 800;
-        font-size: 30px;
+        font-size: 40px;
+        line-height: 45px;
+
+        padding-bottom: 15px;
     }
 
     .profession {
-        font-size: 18px;
-        line-height: 47px;
+        font-size: 30px;
+        line-height: 35px;
+
+        padding-bottom: 25px;
     }
 }

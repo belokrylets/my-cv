@@ -35,7 +35,8 @@ body {
   height: 100vh;
   font-family: "Roboto";
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 22px;
 
 
   background: #1a1a1a;
@@ -49,10 +50,6 @@ body {
   min-height: 100%;
 }
 
-main {
-  padding-top: 70px;
-}
-
 .container {
   max-width: 1106px;
   padding: 0 15px;
@@ -63,6 +60,9 @@ main {
 main {
   flex: 1 1 auto;
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .gold-color {
@@ -112,7 +112,7 @@ main {
   @extend %content-template;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
   .main-page-content,
   .about-content,

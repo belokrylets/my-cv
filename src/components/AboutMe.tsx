@@ -3,8 +3,10 @@ import photo2 from "../images/photo2.jpg";
 
 const AboutMe = () => {
   const buttonViewCV = () => {
-    document.location =
-      "https://hh.ru/resume/ffb4f185ff0927b5ca0039ed1f7a5466505377";
+    window.open(
+      "https://hh.ru/resume/ffb4f185ff0927b5ca0039ed1f7a5466505377",
+      "_blank"
+    );
   };
 
   return (

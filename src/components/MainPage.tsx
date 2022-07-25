@@ -1,11 +1,16 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import photo from "../images/photo.png";
+import { activePageSlice } from "../store/reducers/activePageSlice";
 
 const MainPage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { changeActivePage } = activePageSlice.actions;
 
   const buttonClick = () => {
+    dispatch(changeActivePage("contacts"));
     navigate("contacts");
   };
   return (

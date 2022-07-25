@@ -72,8 +72,22 @@ form {
     }
 }
 
+@media (min-width: 769px) and (max-width: 850px) {
 
-@media (max-width: 767px) {
+    form {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+
+        .small-input,
+        .big-input,
+        .message-input {
+            width: 410px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
 
     .contacts-content {
         flex-wrap: wrap;
@@ -95,7 +109,7 @@ form {
         .small-input,
         .big-input,
         .message-input {
-            width: 380px;
+            width: 300px;
         }
     }
 }

@@ -21,7 +21,7 @@
     100% {
         position: absolute;
 
-        height: 450px;
+        height: 500px;
     }
 }
 
@@ -29,6 +29,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -47,17 +48,17 @@
 }
 
 .card-small {
-    height: 170px;
+    height: 195px;
     width: 200px;
 }
 
 .card-big {
-    height: 270px;
+    height: 295px;
     width: 200px;
 }
 
 .card-average {
-    height: 220px;
+    height: 245px;
     width: 200px;
 }
 
@@ -78,8 +79,8 @@
 }
 
 .project-column {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .buttonProject {
@@ -143,7 +144,7 @@
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .cards-projects {
         justify-content: center;
     }

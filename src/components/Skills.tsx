@@ -7,7 +7,7 @@ const Skills = () => {
       <div className="skills-content container">
         <div className="experience">
           <h3>
-            Мои <span className="gold-color">навыки</span> и{" "}
+            Мои <span className="gold-color">навыки</span> и
             <span className="gold-color">опыт</span>
           </h3>
           <p className="education">
@@ -21,7 +21,7 @@ const Skills = () => {
           <p className="education">
             В моем профиле в GitHub вы найдете несколько учебных проектов на JS,
             тестовые задания и пэт проект с использованием SPA, React, React
-            router dom, Redux, Redux Toolkit, Typescript.{" "}
+            router dom, Redux, Redux Toolkit, Typescript.
             <a href="https://github.com/belokrylets">Ссылка на GitHub.</a>
           </p>
         </div>

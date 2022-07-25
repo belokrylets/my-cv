@@ -46,8 +46,8 @@
             color: inherit;
             font-family: "Roboto";
             font-style: normal;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 20px;
+            line-height: 24px;
             display: flex;
             align-items: center;
             text-align: center;
@@ -82,7 +82,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header-body {
         height: 50px;
     }

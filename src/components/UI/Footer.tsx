@@ -10,17 +10,25 @@ export const Footer = () => {
           <div className="right">2022 All Right Reserved.</div>
         </div>
         <div className="social">
-          <a href="https://instagram.com/belokrylets">
+          {/* <a href="https://instagram.com/belokrylets" target="_blank" rel="noopener noreferrer">
             <i>
               <Icon icon="ant-design:instagram-filled" width="30" height="30" />
             </i>
-          </a>
-          <a href="https://t.me/belokrylets">
+          </a> */}
+          <a
+            href="https://t.me/belokrylets"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i>
               <Icon icon="file-icons:telegram" width="28" height="28" />
             </i>
           </a>
-          <a href="https://vk.com/belokrylec">
+          <a
+            href="https://vk.com/belokrylec"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i>
               <Icon icon="fa:vk" width="35" height="35" />
             </i>

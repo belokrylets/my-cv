@@ -18,14 +18,14 @@
 
 .image-about {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
 
     img {
         position: absolute;
         top: 0;
         right: 0;
-        width: 350px;
+        width: 450px;
         border-radius: 20px;
         z-index: 20;
         animation: photo 2s forwards;
@@ -35,8 +35,8 @@
         position: absolute;
 
         z-index: 10;
-        width: 350px;
-        height: 350px;
+        width: 450px;
+        height: 450px;
         box-sizing: border-box;
         border: 3px solid #f4fa1a;
         border-radius: 20px;
@@ -52,18 +52,66 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 390px) {
+    .about-content {
+        .image-about {
+            width: 280px;
+            height: 280px;
+
+            img {
+                width: 280px;
+                left: -10px;
+                animation: photoMobile 2s forwards;
+            }
+
+            .frame {
+                width: 280px;
+                height: 280px;
+                left: -10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    .about-content {
+        .image-about {
+            width: 350px;
+            height: 350px;
+
+            img {
+                width: 350px;
+                left: -10px;
+                animation: photoMobile 2s forwards;
+            }
+
+            .frame {
+                width: 350px;
+                height: 350px;
+                left: -10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
     .text-about {
         width: 100%;
     }
 
     .image-about {
+        width: 350px;
+        height: 350px;
+
         img {
+            width: 350px;
             left: -10px;
             animation: photoMobile 2s forwards;
         }
 
         .frame {
+            width: 350px;
+            height: 350px;
             left: -10px;
         }
     }

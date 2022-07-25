@@ -70,13 +70,23 @@ const Contacts = () => {
             <i>
               <Icon icon="cib:github" color="#f4fa1a" width="30" height="30" />
             </i>
-            <a href="https://github.com/belokrylets"> Мой GitHub</a>
+            <a
+              href="https://github.com/belokrylets"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Мой GitHub
+            </a>
           </div>
           <div className="item-contacts">
             <i>
               <Icon icon="pepicons:cv" color="#f4fa1a" width="30" height="30" />
             </i>
-            <a href="https://hh.ru/resume/ffb4f185ff0927b5ca0039ed1f7a5466505377">
+            <a
+              href="https://hh.ru/resume/ffb4f185ff0927b5ca0039ed1f7a5466505377"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Резюме
             </a>
           </div>
@@ -85,14 +95,20 @@ const Contacts = () => {
               <Icon icon="el:linkedin" color="#f4fa1a" width="30" height="30" />
             </i>
             <a href="https://hh.ru/resume/ffb4f185ff0927b5ca0039ed1f7a5466505377">
-              Прфиль LinkedIn
+              Профиль LinkedIn
             </a>
           </div> */}
           <div className="item-contacts">
             <i>
               <Icon icon="cib:habr" color="#f4fa1a" width="30" height="30" />
             </i>
-            <a href="https://career.habr.com/belokrylets1">Прфиль Habr</a>
+            <a
+              href="https://career.habr.com/belokrylets1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Профиль Habr
+            </a>
           </div>
         </div>
       </div>
