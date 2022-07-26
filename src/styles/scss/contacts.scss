@@ -61,10 +61,13 @@ form {
 
     i {
         margin-right: 10px;
+
     }
 
     a {
         color: inherit;
+        display: flex;
+        align-items: center;
 
         &:hover {
             color: #f4fa1a

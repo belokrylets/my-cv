@@ -22,6 +22,9 @@ test("Router test", () => {
 
   userEvent.click(mainLink);
   expect(screen.getByText(/Белокрылец/i)).toBeInTheDocument();
+  expect(screen.getByText(/Связаться/i)).toBeInTheDocument();
+  userEvent.click(screen.getByText(/Связаться/i));
+  expect(screen.getByText(/написать мне/i)).toBeInTheDocument();
 
   userEvent.click(aboutLink);
   expect(screen.getByText(/мой путь к/i)).toBeInTheDocument();

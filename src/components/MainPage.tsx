@@ -25,7 +25,7 @@ const MainPage = () => {
           </button>
         </div>
         <div className="image-main-page">
-          <img src={photo} alt="" />
+          <img src={photo} alt="img-main-page" />
         </div>
       </div>
     </div>

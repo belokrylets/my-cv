@@ -1,13 +1,18 @@
 import React from "react";
 
-const MessageInput = () => {
+interface MessageInputProps {
+  placeholder: string;
+  id: string;
+  name: string;
+}
+const MessageInput = ({ id, name, placeholder }: MessageInputProps) => {
   return (
     <div className="message-input-block">
       <textarea
         className="message-input"
-        placeholder="Сообщение..."
-        id="message"
-        name="message"
+        placeholder={placeholder}
+        id={id}
+        name={name}
       />
     </div>
   );

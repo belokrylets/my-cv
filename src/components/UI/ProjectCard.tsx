@@ -38,12 +38,14 @@ const ProjectCard = ({
             Stack:
             <ul>
               {stack.map((item) => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
           <div className="source">
-            <a href={GitHub}>Исходный код</a>
+            <a href={GitHub} target="_blank" rel="noopener noreferrer">
+              Исходный код
+            </a>
           </div>
         </div>
       </div>

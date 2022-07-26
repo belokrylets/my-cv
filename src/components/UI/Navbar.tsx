@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className={classNames("blur", { active: isActive })}></div>
         <div className="header-body" onClick={(e) => e.stopPropagation()}>
           <div className="header-logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="logo" />
           </div>
           <nav className={classNames("header-menu", { active: isActive })}>
             <ul className="menu-list">

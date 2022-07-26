@@ -7,9 +7,10 @@ const rootReducer = combineReducers({
   activeBurgerReducer,
 });
 
-export const setupStore = () => {
+export const setupStore = (initialState = {}) => {
   return configureStore({
     reducer: rootReducer,
+    preloadedState: initialState,
   });
 };
 

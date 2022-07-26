@@ -13,11 +13,7 @@ const ButtonBurger = ({ burgerActive, onClick }: ButtonBurgerProps) => {
       className={classNames("burger-btn", { active: burgerActive })}
     >
       <i className="burger-button">
-        {!burgerActive ? (
-          <Icon icon="charm:menu-hamburger" />
-        ) : (
-          <Icon icon="eva:close-fill" />
-        )}
+        <Icon icon={burgerActive ? "eva:close-fill" : "charm:menu-hamburger"} />
       </i>
     </button>
   );
