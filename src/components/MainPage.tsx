@@ -19,7 +19,7 @@ const MainPage = () => {
         <div className="text-main-page">
           <div className="greetings">Привет, меня зовут</div>
           <div className="name">Сергей Белокрылец</div>
-          <div className="profession">Я Frontend Разработчик</div>
+          <div className="profession">Я pre-middle React Developer</div>
           <button className="my-button" onClick={buttonClick}>
             Связаться со мной
           </button>
